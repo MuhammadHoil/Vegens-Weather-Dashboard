@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VEGENS WEATHER DASHBOARD</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>VEGENS WEATHER DASHBOARD</h1>
+    
+    <div class="city-selector">
+      <label for="city">Pilih Kota:</label>
+      <select id="city">
+        <option value="Jakarta">Jakarta</option>
+        <option value="Bogor">Bogor</option>
+        <option value="Depok">Depok</option>
+        <option value="Tangerang">Tangerang</option>
+        <option value="Bekasi">Bekasi</option>
+      </select>
+    </div>
+
+    <div class="weather-info">
+      <h2 id="city-name">Jakarta</h2>
+      <p id="description"></p>
+      <p id="temperature"></p>
+    </div>
+
+    <canvas id="weatherChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
