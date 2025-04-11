@@ -8,29 +8,30 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="images/weather_icon.png" alt="">
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <button onclick="toggleDarkMode()">🌙 / ☀️ Mode</button>
+    </div>
+  </nav>
+
   <div class="container">
     <h1>VEGENS WEATHER DASHBOARD</h1>
-    
-    <div class="city-selector">
-      <label for="city">Pilih Kota:</label>
-      <select id="city">
-        <option value="Jakarta">Jakarta</option>
-        <option value="Bogor">Bogor</option>
-        <option value="Depok">Depok</option>
-        <option value="Tangerang">Tangerang</option>
-        <option value="Bekasi">Bekasi</option>
-      </select>
+
+    <div class="controls">
+      <input type="text" id="city-input" placeholder="Masukkan nama kota..." />
+      <button onclick="addCity()">Add City</button>
     </div>
 
-    <div class="weather-info">
-      <h2 id="city-name">Jakarta</h2>
-      <p id="description"></p>
-      <p id="temperature"></p>
+    <div class="city-list" id="city-list">
+      <!-- Cuaca dan grafik tiap kota akan masuk di sini -->
     </div>
-
-    <canvas id="weatherChart"></canvas>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
